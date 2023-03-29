@@ -13,7 +13,7 @@ public class ArrayListUtilitiesTest {
         int actualOutput;
 
         // some positive numbers
-        input = new ArrayList<>(Arrays.asList(1, 5, 4, 9, 2, 1));
+        input = new ArrayList<>(Arrays.asList(4, 1, 2, 7, 9, 2));
         expectedOutput = 9;
         actualOutput = ArrayListUtilities.getListMax(input);
         assertEquals(expectedOutput, actualOutput);
