@@ -1,3 +1,5 @@
+Write the following static methods in `ArrayListUtilities.java`, and corresponding unit tests in `ArrayListUtilitiesTest.java`. Each unit test should contain at least 3 assertions, including corner cases where appropriate.
+
 1. `getListMax`
 
     Given an `ArrayList` of at least one integer, return the maximum integer in the collection. 
