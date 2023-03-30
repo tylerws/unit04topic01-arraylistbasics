@@ -12,6 +12,26 @@ public class ArrayListUtilities {
         return maxVal;
     }
 
+    public static ArrayList<String> withoutLongWords(ArrayList<String> items) {
+        ArrayList<String> newItems = items;
+        for (int i = 0; i < items.size(); i++) {
+            if (items.get(i).length() > 5) {
+                newItems.remove(i);
+                i--;
+            }
+        }
+        return newItems;
+    }
+
+    public static void removeLongWords(ArrayList<String> items) {
+        for (int i = 0; i < items.size(); i++) {
+            if (items.get(i).length() > 5) {
+                items.remove(i);
+                i--;
+            }
+        }
+    }
+
     public static void main(String[] args) {
         System.out.println("method returns " + 
         getListMax(new ArrayList<Integer>(Arrays.asList(1, 2, 3, 2, 1)))

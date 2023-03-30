@@ -18,4 +18,27 @@ public class ArrayListUtilitiesTest {
         actualOutput = ArrayListUtilities.getListMax(input);
         assertEquals(expectedOutput, actualOutput);
     }
+
+    @Test
+    public void testWithoutLongWords() {
+        ArrayList<String> input;
+        ArrayList<String> expectedOutput;
+        ArrayList<String> actualOutput;
+
+        input = new ArrayList<String>(Arrays.asList("monkey", "snail", "frog", "gorilla"));
+        expectedOutput = new ArrayList<String>(Arrays.asList("snail", "frog"));
+        actualOutput = ArrayListUtilities.withoutLongWords(input);
+        assertEquals(expectedOutput, actualOutput);
+    }
+
+    @Test
+    public void testRemoveLongWords() {
+        ArrayList<String> input;
+        ArrayList<String> expectedOutput;
+
+        input = new ArrayList<String>(Arrays.asList("monkey", "snail", "frog", "gorilla"));
+        expectedOutput = new ArrayList<String>(Arrays.asList("snail", "frog"));
+        ArrayListUtilities.removeLongWords(input);
+        assertEquals(expectedOutput, input);
+    }
 }
