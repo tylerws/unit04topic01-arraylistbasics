@@ -41,4 +41,16 @@ public class ArrayListUtilitiesTest {
         ArrayListUtilities.removeLongWords(input);
         assertEquals(expectedOutput, input);
     }
+
+    @Test
+    public void testReversed() {
+        ArrayList<Double> input;
+        ArrayList<Double> expectedOutput;
+        ArrayList<Double> actualOutput;
+
+        input = new ArrayList<Double>(Arrays.asList(1.0, 2.0, 3.0, 4.0, 5.0));
+        expectedOutput = new ArrayList<Double>(Arrays.asList(5.0, 4.0, 3.0, 2.0, 1.0));
+        actualOutput = ArrayListUtilities.reversed(input);
+        assertEquals(expectedOutput, actualOutput);
+    }
 }

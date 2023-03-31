@@ -32,6 +32,14 @@ public class ArrayListUtilities {
         }
     }
 
+    public static ArrayList<Double> reversed(ArrayList<Double> items) {
+        ArrayList<Double> reverseList = new ArrayList<Double>();
+        for (int i = items.size() - 1; i > 0; i--) {
+            reverseList.add(items.get(i));
+        }
+        return reverseList;
+    }
+
     public static void main(String[] args) {
         System.out.println("method returns " + 
         getListMax(new ArrayList<Integer>(Arrays.asList(1, 2, 3, 2, 1)))
